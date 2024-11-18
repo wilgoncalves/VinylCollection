@@ -1,8 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    ViewData["Name"] = "My Vinyl Collection";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">@ViewData["Name"]<span style='font-size:50px;'>&#128191;</span></h1>
+    <p>Here you can save and organize your vinyl collection.</p>
+    <p>Created by Willian Gonçalves:</p>
+    <div align="center">
+        <a href="https://www.linkedin.com/in/williangon%C3%A7alves25/" target="_blank">
+            <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo" />
+        </a>
+        <a href="mailto:santoswil81@gmail.com" target="_blank">
+            <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo" />
+        </a>
+        <a href="https://t.me/goncalveswilliam" target="_blank">
+            <img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="telegram logo" />
+        </a>
+    </div>
 </div>
