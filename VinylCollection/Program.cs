@@ -3,6 +3,8 @@ using Microsoft.Extensions.Configuration;
 using MySql.Data.MySqlClient;
 using System.Data;
 using Serilog;
+using VinylCollection.Interfaces;
+using VinylCollection.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,8 @@ builder.Services.AddSingleton<IDbConnection>(sp => new MySqlConnection(connectio
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ITitleRepository>();
+builder.Services.AddScoped<TitleRepository>();
 
 var app = builder.Build();
 

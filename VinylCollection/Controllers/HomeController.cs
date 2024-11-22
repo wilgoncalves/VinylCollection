@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using VinylCollection.Models;
+using VinylCollection.Models.ViewModels;
 
 namespace VinylCollection.Controllers
 {
